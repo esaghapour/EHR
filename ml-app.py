@@ -36,7 +36,7 @@ uploaded_file=file_selector()
 if uploaded_file is not None:   
     target_options = uploaded_file.columns
     chosen_target = st.sidebar.selectbox(
-        "Choose Target", target_options
+        "Choose Target", target_options,key=897
     )
     # chosen_target = chosen_target
     labels = uploaded_file[chosen_target].values
@@ -74,7 +74,7 @@ if uploaded_file is not None:
     data1 = data[~np.isnan(data)]
     # st.header("Correlation between 2 features")
     st.sidebar.header("Correlation Pattern Among Features")
-    columnx = st.sidebar.selectbox("X-Axis", colnamess)
+    columnx = st.sidebar.selectbox("X-Axis", colnamess,key=9876)
     # pic = st.sidebar.selectbox("Correlation X", list(pics3.keys()), 0) 
     st.header("Correlation Pattern Among Features")
     imp_median = SimpleImputer(missing_values=np.nan, strategy='median')

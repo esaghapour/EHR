@@ -1,8 +1,9 @@
-pandas
 streamlit
-plotly
-numpy
-matplotlib-base
+pandas==1.1.3
+plotly==4.14.1
+plotly-orca==3.4.3
+numpy==1.19.2
+matplotlib-base==3.3.2 
 seaborn==0.10.1
 missingpy==0.2.0
 sklearn-contrib-lightning==0.5.0

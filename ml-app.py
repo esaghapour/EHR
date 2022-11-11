@@ -3,7 +3,6 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from missingpy import MissForest 
 from sklearn.impute import KNNImputer
 import base64
 from sklearn.decomposition import PCA

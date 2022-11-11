@@ -560,32 +560,6 @@ if uploaded_file is not None:
     st.text("##########################################################################################")
     # #################### Cluster part ##########################################
 # print(X_imputed)
-    X_imputeds=np.array(pd.read_csv('x_imputed.csv'))
-    st.text("##########################################################################################")
-    st.sidebar.text("##################################")
-    st.header("Visualization of Combination of Dimensional Reduction Algorithms and K-means Clustering")
-    st.text("##########################################################################################")
-    
-    st.sidebar.header("Visualization of Combination of Dimensional Reduction Algorithms and K-means Clustering")
-    
-    clustering_methods =[
-        "My data do not need to cluster!" ,  
-        "PCA-2D",
-        "PCA-3D",
-        "t-SNE-2D",
-        "t-SNE-3D"]
-    # imputers = st.sidebar.selectbox("Imutation algorithm", imputers_methods,0)
-    clustering_methods = st.sidebar.selectbox(
-        label="Choose...", options=clustering_methods
-    )
-    
-    if clustering_methods == "t-SNE-2D" or clustering_methods == "t-SNE-3D" :
-        n_iter = st.sidebar.slider('n_iter', 50, 1000, 300,key=3)
-        perplexity = st.sidebar.slider('perplexity',5, 50, 40,key=3)
-        n_cluster = st.sidebar.slider('n_cluster', 2, 10, 2, key=3)
-    if clustering_methods == "PCA-2D" or clustering_methods == "PCA-3D" :
-        n_cluster = st.sidebar.slider('n_cluster', 2, 10, 2, key=3)
-        
       
     btn1 = st.sidebar.button("Run-part-2")
     

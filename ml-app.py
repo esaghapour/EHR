@@ -12,8 +12,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import RepeatedKFold
 from sklearn import preprocessing
 from sklearn.linear_model import LassoCV
-from fancyimpute import SoftImpute
-from fancyimpute import IterativeImputer as MICE
 import misslgb
 from gain import gain 
 from sklearn.cluster import KMeans
